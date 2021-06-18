@@ -1,0 +1,91 @@
+/* Remove default margin and set background color*/
+html,body{
+    margin:0;
+    padding:0;
+	background-color: #F2E8B8;
+}
+
+/* ------------------Front Cover------------------- */
+/* Set position of the background-sec div as well as the text */
+.background-sec{
+	position: relative;
+	text-align: center;
+}
+
+.text{
+	position: absolute;
+	margin: auto;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	white-space: nowrap;
+	z-index: 1;
+}
+
+/* Style background picture and text */
+.background-sec img{
+	height: 100%;
+	width: 100%;
+	animation: changeColor 10s backwards;
+	animation-iteration-count: infinite;
+	position: relative;
+}
+
+@keyframes changeColor{
+	from{filter: hue-rotate(0deg) brightness(0.9);}
+	to{filter: hue-rotate(359deg) brightness(0.9);}
+}
+
+.text{
+	font-family: "Arizonia", Helvetica, sans-serif;
+	font-size: 200px;
+	color: white;
+}
+
+/* -----------------brief introduction----------------- */
+.brief-info{
+	background-color: #F2E8B8;
+	width: 100%;
+	height: 1000px;
+}
+
+.brief-info h1{
+	margin: 0px;
+}
+
+/* -----------Style the back to top icon----------- */
+.icon img{
+	width: 60px;
+	height: 60px;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	filter: brightness(1.3);
+}
+
+.icon:hover img{
+	filter: brightness(2);
+}
+
+.back-text{
+	visibility: hidden;
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	font-size: 20px;
+	font-family: "Merienda One", Helvetica, sans-serif;
+}
+
+.icon:hover .back-text{
+	visibility: visible;
+}
+
+/* Smooth transition to top */
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+
+
