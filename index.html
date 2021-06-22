@@ -8,22 +8,73 @@
 
 		<!--fonts-->
 		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Berkshire+Swash&family=Great+Vibes&family=Merienda+One&family=Allura&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Architects+Daughter&family=Great+Vibes&family=Merienda+One&family=Allura&display=swap" rel="stylesheet">
 	</head>
 	
 	<body>
+		<!-- Navigation Bar -->
+		<div class = "navBar" id = "top">
+			<h1>Karen Li</h1>
+			<div class = "navBarButton">
+				<h2 id = "selected">Home</h2>
+				<a href = "extracurriculars.html">Extracurriculars</a>
+				<a href = "hobbies.html">Hobbies</a>
+				<a href = "favorites.html">Favorites</a>
+				<a href = "references.html">References</a>
+			</div>
+		</div>
+		
 		<!-- Front cover -->
-		<div class = "background-sec" id = "top">
-			<img src = "images/background.webp" alt = "background picture"/>
-			<div><h1 class = "text">About Me</h1></div>
+		<div class = "background-sec">
+			<img src = "images/home-background.webp" alt = "background picture"/>
+			<div><h1 class = "background-text">About Me</h1></div>
 		</div>
 		
-		<!-- Brief Intro -->
+		<!-- Brief Info about me -->
 		<div class = "brief-info">
-			<h1>Hi</h1>
+			<h1>Random Facts About Me</h1>
+			<img src = "images/me.jpg" alt = "Picture of me" />
+			<ul>
+				<li>Name: Karen Li</li>
+				<li>Age: 15</li>
+				<li>Siblings: 1 brother who is 17</li>
+				<li>Middle School: Windfields</li>
+				<li>High School: Victoria Park CI</li>
+				<li>Residence: North York</li>
+				<li>Pets: None (but I want a cat)</li>
+			</ul>	
 		</div>
 		
-		<!-- Go back to the top -->
+		<!-- Learn More Section -->
+		<div class = "learn-more">
+			<h1>Learn More</h1>
+			<div class = "container">
+				<a href="extracurriculars.html">
+					<img class = "images" id = "extracurriculars-img" src = "images/home-extracurri.jpg" alt = "Extracurriculars Picture" />
+				</a>
+				<a href="hobbies.html">
+					<img class = "images" id = "hobbies-img" src = "images/home-hobbies.jpg" alt = "Hobbies Picture" />
+				</a>
+				<a href="favorites.html">
+					<img class = "images" id = "favorites-img" src = "images/home-favorites.jpg" alt = "Favorites Picture" />
+				</a>
+				
+				<div class = "text">
+					<a href = "extracurriculars.html"><h2 id = "extracurriculars-text">Extracurricular <br> Activities</h2></a>
+					<a href = "hobbies.html"><h2 id = "hobbies-text">Random Hobbies</h2></a>
+					<a href = "favorites.html"><h2 id = "favorites-text">Favorites</h2></a>
+				</div>
+			</div>
+			
+			<h3>Click on the images to learn more about me!</h3>
+		</div>
+		
+		<!-- Text telling user to go back to top -->
+		<div class = "back-to-top">
+			<h1>In case you missed it, here's how you can go back to the top! </h1>
+		</div>
+		
+		<!-- Go back to the top icon-->
 		<div class = "icon">
 			<a href = #top>
 				<img src = "images/backIcon.jpg" alt = "Back Icon"/>
