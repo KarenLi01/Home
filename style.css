@@ -16,7 +16,7 @@ hr{
 
 /* Set fixed layout */
 #wrapper{
-	width: 1440px;
+	width: 1422px;
 	margin: auto;
 }
 
@@ -68,7 +68,7 @@ html{
 
 .navBarButton{
 	display: inline;
-	margin-left: 369px;
+	margin-left: 365px;
 }
 
 .navBarButton a, #selected{
@@ -205,7 +205,6 @@ html{
 .learn-more-text{
 	position: absolute;
 	bottom: 140px;
-	/* left: 60px; */
 	text-align: center;
 }
 
@@ -233,13 +232,12 @@ html{
 /* ---------Text telling user to go back to top-------- */
 .back-to-top{
 	background-color: #F2E8B8;
-	height: 130px;
 }
 
 .back-to-top h1{
 	font-size: 20px;
 	color: #9C7752;
-	margin: 50px 0px 0px 600px;
+	margin: 50px 0px 0px 550px;
 	display: inline;
 }
 
@@ -251,6 +249,15 @@ html{
   position: relative;
   top: 10px;
   left: 5px;
+}
+
+/* ------------Validation pictures-------------  */
+.validation{
+	float: left;
+}
+
+.validation img{
+	height: 50px;
 }
 
 /* ----------------------------------Styles for extracurriculars section------------------------------ */
@@ -364,7 +371,7 @@ h2#event1{
 }
 
 .event1, .event2, .event3{
-	margin-left: 60px;
+	margin-left: 50px;
 	float: left;
 }
 
@@ -376,7 +383,6 @@ h2#event1{
 .event2{
 	margin-top: 30px;
 }
-
 
 /* Change background color for text at the bottom */
 #extracurriculars-back{
@@ -436,15 +442,17 @@ body.hobbies{
 table{
 	font-family: "Architects Daughter", Helvetica, sans-serif;
 	background-color: PeachPuff;
-	border: 2px double #C27259;
+	border: 2px solid #C27259;
 }
 
 th{
 	font-weight: bold;
+	border: 1px solid #C27259;
 }
 
 td{
 	font-size: 25px;
+	border: 1px solid #C27259;
 }
 
 .description{
@@ -527,5 +535,131 @@ td{
 	color: #C27259;
 }
 
+/* ----------------------------------Styles for favorites section------------------------------ */
 
+body.favorites{
+	background-color: #E3BAC6;
+}
 
+/* text for back to top icon */
+#favorites-icon{
+	color: #964D62;
+}
+
+/* ---------------------My favorites----------------------*/
+.favorites-content{
+	background-color: #E3BAC6;
+	height: 1050px;
+	color: #B87488;
+	text-align: center;
+	margin: 5px;
+}
+
+.favorites-content h1{
+	font-size: 80px;
+	text-shadow: 4px 4px #C2919F;
+	margin: 40px 0px 20px 0px;
+}
+
+/* Headings on top */
+.favorites-content h2{
+	font-size: 35px;
+	background-color: #F5C6F2;
+	padding: 20px;
+}
+
+/* Hidden text at the bottom */
+.favorites-content p{
+	font-size: 30px;
+	visibility: hidden;
+}
+
+/* Text telling user to hover over the boxes */
+.favorites-content > p{
+	font-size: 40px;
+	visibility: visible;
+}
+
+.favorites-content div{
+	float: left;
+	margin: 10px;
+	width: 450px;
+	height: 230px;
+}
+
+/* Styling for fav color */
+div.color{
+	margin: 0px 0px 5px 0px;
+	height: 42px;
+	border: 2px solid white;
+	visibility: hidden;
+}
+
+.color1{
+	background-color: #BCF5D1;
+}
+
+.color2{
+	background-color: #D6B9A7;
+}
+
+/* Allow text to appear and add border and shadow to heading box*/
+div.fav1:hover > p, div.fav2:hover > p, div.fav3:hover > p, div.fav4:hover > p, div.fav5:hover > p, div.fav6:hover > p, div.fav7:hover > div, div.fav8:hover > p, div.fav9:hover > p{
+	visibility: visible;
+}
+
+div.fav1:hover > h2, div.fav2:hover > h2, div.fav3:hover > h2, div.fav4:hover > h2, div.fav5:hover > h2, div.fav6:hover > h2, div.fav7:hover > h2, div.fav8:hover > h2, div.fav9:hover > h2{
+	border-left: 2px solid #B87488;
+	border-top: 2px solid #B87488;
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+	box-shadow: 5px 5px 10px #C2919F inset;
+}
+
+/* Change background color for text at the bottom */
+#favorites-back{
+	background-color: #B87488;
+}
+
+#favorites-back h1, #favorites-back:after{
+	color: #E3BAC6;
+}
+
+/* ----------------------------------Styles for references section------------------------------ */
+
+body.references{
+	background-color: #B9C1EB;
+}
+
+/* text for back to top icon */
+#references-icon{
+	color: #394273;
+}
+
+/* ---------------------Citation list styles----------------------*/
+.citation-list{
+	background-color: #B9C1EB;
+	height: 2200px;
+	color: #596399;
+	margin: 70px;
+}
+
+.citation-list h1{
+	font-size: 80px;
+	text-shadow: 4px 4px #8089BA;
+	margin: 50px 0px 20px 0px;
+	text-align: center;
+}
+
+.citation-list p{
+	font-size: 30px;
+}
+
+/* Change background color for text at the bottom */
+#references-back{
+	background-color: #596399;
+}
+
+#references-back h1, #references-back:after{
+	color: #B9C1EB;
+}
